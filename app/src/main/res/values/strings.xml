@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Tự Động Chạm</string>
+    <string name="accessibility_description">Cho phép ứng dụng thực hiện, ghi lại và phát lại các thao tác chạm và vuốt trên màn hình theo cài đặt của bạn. Dịch vụ cũng nhận phím âm lượng để dừng nhanh khi đang chạy.</string>
+
+    <string name="status_on">● Dịch vụ trợ năng đang bật</string>
+    <string name="status_off">○ Dịch vụ trợ năng chưa bật</string>
+
+    <string name="steps">Cách dùng:\n1. Nhấn “Bật dịch vụ trợ năng”, tìm “Tự Động Chạm” và bật lên.\n2. Một thanh điều khiển nổi sẽ hiện trên màn hình. Nhấn nút xanh dương trên thanh để đổi kiểu: Chạm, Vuốt A→B, Macro hoặc Chuỗi.\n3. Chạm / Vuốt: kéo chấm A (và B) tới đúng vị trí rồi nhấn ▶ Bắt đầu.\n4. Macro: nhấn ● Ghi, thao tác như bình thường trên bất kỳ ứng dụng nào, xong nhấn ■ Xong. Sau đó nhấn ▶ Phát để lặp lại đúng các thao tác đã ghi.\n5. Chuỗi: nhấn ＋ Chạm hoặc ＋ Vuốt để thêm bước 1, 2, 3…, kéo từng chấm tới vị trí, nhấn giữ một chấm để chỉnh số lần ấn và thời gian của bước đó, rồi nhấn ▶ Phát.\n6. Dừng: nhấn ■ Dừng, hoặc nhấn phím tăng/giảm âm lượng.</string>
+    <string name="restricted_hint">Nếu nút bật dịch vụ bị mờ (Android 13 trở lên, app cài từ file APK): mở “Thông tin ứng dụng”, nhấn dấu ⋮ ở góc trên rồi chọn “Cho phép cài đặt bị hạn chế”.</string>
+
+    <string name="btn_accessibility">Bật dịch vụ trợ năng</string>
+    <string name="btn_app_info">Mở thông tin ứng dụng</string>
+
+    <string name="label_mode">Kiểu thao tác</string>
+    <string name="mode_tap">Chạm một điểm (chấm A)</string>
+    <string name="mode_swipe">Vuốt từ chấm A đến chấm B</string>
+    <string name="mode_macro">Macro: ghi lại rồi phát lại thao tác của bạn</string>
+    <string name="mode_seq">Chuỗi: nhiều bước chạm / vuốt 1, 2, 3… có thời gian chờ riêng</string>
+
+    <string name="label_interval">Khoảng nghỉ giữa các lần (mili giây, tối thiểu 50). Với Macro và Chuỗi: nghỉ giữa các vòng. Cũng là thời gian chờ mặc định của bước mới thêm</string>
+    <string name="label_repeat">Số lần lặp (0 = lặp mãi đến khi dừng). Với Macro và Chuỗi: số vòng phát</string>
+    <string name="label_swipe_duration">Thời gian mỗi lần vuốt (mili giây). Cũng là mặc định của bước vuốt mới thêm</string>
+
+    <string name="label_seq">Danh sách các bước (chế độ Chuỗi)</string>
+    <string name="seq_hint">Thêm bước bằng nút ＋ Chạm / ＋ Vuốt trên thanh nổi rồi kéo các chấm tới đúng vị trí (xanh lá = chạm, xanh dương = đầu vuốt, đỏ = cuối vuốt). Nhấn giữ một chấm để mở pop-up chỉnh nhanh số lần ấn và thời gian ngay trên màn hình (chạm nút −/＋ để đổi một nấc, giữ để đổi nhanh). Thời gian chờ cũng sửa được ở đây, sau đó nhấn “Lưu và hiện thanh điều khiển”.</string>
+    <string name="seq_empty">Chưa có bước nào.</string>
+    <string name="seq_item_tap">%1$d. Chạm</string>
+    <string name="seq_item_swipe">%1$d. Vuốt (A→B)</string>
+    <string name="seq_delay_label">Chờ trước bước này (mili giây)</string>
+    <string name="seq_duration_label">Thời gian vuốt của bước này (mili giây)</string>
+    <string name="seq_delete">Xóa</string>
+
+    <string name="popup_title_tap">Bước %1$d · Chạm</string>
+    <string name="popup_title_swipe">Bước %1$d · Vuốt</string>
+    <string name="popup_count">Số lần ấn</string>
+    <string name="popup_delay">Chờ trước bước này (thời gian chuyển từ bước trước)</string>
+    <string name="popup_gap">Nghỉ giữa các lần ấn</string>
+    <string name="popup_duration">Thời gian mỗi lần vuốt</string>
+    <string name="popup_done">Xong</string>
+    <string name="popup_delete">Xóa bước</string>
+
+    <string name="btn_apply">Lưu và hiện thanh điều khiển</string>
+
+    <string name="toast_saved">Đã lưu và hiện thanh điều khiển nổi</string>
+    <string name="toast_need_service">Hãy bật dịch vụ trợ năng trước</string>
+    <string name="toast_hidden">Đã ẩn thanh điều khiển. Mở ứng dụng để hiện lại.</string>
+    <string name="toast_done">Hoàn tất %1$d lần</string>
+    <string name="toast_gesture_failed">Không gửi được thao tác. Hãy kiểm tra dịch vụ trợ năng.</string>
+    <string name="toast_stopped_key">Đã dừng bằng phím âm lượng</string>
+    <string name="toast_no_macro">Chưa có macro nào. Hãy nhấn ● Ghi để ghi trước.</string>
+    <string name="toast_recording">Đang ghi: hãy thao tác trên màn hình, xong nhấn ■ Xong.</string>
+    <string name="toast_rec_saved">Đã lưu macro gồm %1$d thao tác</string>
+    <string name="toast_rec_empty">Chưa ghi thao tác nào, giữ nguyên macro cũ.</string>
+    <string name="toast_no_seq">Chưa có bước nào. Hãy nhấn ＋ Chạm hoặc ＋ Vuốt để thêm.</string>
+    <string name="toast_seq_added">Đã thêm bước %1$d. Hãy kéo chấm tới đúng vị trí.</string>
+    <string name="toast_seq_max">Tối đa %1$d bước.</string>
+
+    <string name="bar_start">▶ Bắt đầu</string>
+    <string name="bar_play">▶ Phát</string>
+    <string name="bar_stop">■ Dừng</string>
+    <string name="bar_rec">● Ghi</string>
+    <string name="bar_rec_stop">■ Xong</string>
+    <string name="bar_mode_tap">Chạm</string>
+    <string name="bar_mode_swipe">Vuốt A→B</string>
+    <string name="bar_mode_macro">Macro</string>
+    <string name="bar_mode_seq">Chuỗi</string>
+    <string name="bar_add_tap">＋ Chạm</string>
+    <string name="bar_add_swipe">＋ Vuốt</string>
+    <string name="bar_undo">⌫ Xóa cuối</string>
+</resources>
